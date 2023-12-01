@@ -73,6 +73,8 @@ body {
     display: grid;
     grid-template-columns: 3fr 2fr;
     max-width: 1200px;
+    justify-content: center;
+    
 }
 
 .form-side {
@@ -81,18 +83,14 @@ body {
     justify-content: center;
     align-items: start;
     background-color: white;
+    place-items: center;
+}
+div.form-side{
+    
 }
 
 .welcome-message {
     max-width: 360px;
-}
-
-.logo {
-    display: block;
-    height: 40px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
 }
 
 .my-form {
@@ -109,6 +107,8 @@ body {
     box-shadow: 
         rgba(100, 100, 111, 0.2)
         0px 7px 29px 0px;
+    top: -15%;
+    left: 60%;
 }
 
 .form-welcome {
@@ -279,10 +279,5 @@ select:focus{
     .form-wrapper {
         grid-template-columns: 1fr;
         height: 100vh;
-    }
-    
-    .info-side {
-        display: none;
-        padding: 48px 48px 48px 32px;
     }
 }

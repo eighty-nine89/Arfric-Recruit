@@ -110,6 +110,8 @@ body {
     box-shadow: 
         rgba(100, 100, 111, 0.2)
         0px 7px 29px 0px;
+    top: -15%;
+    left: 60%;
 }
 
 .form-welcome {
@@ -276,14 +278,10 @@ body {
 select:focus{
     border: 1px solid var(--primary);
 }
+
 @media (max-width: 840px) {
     .form-wrapper {
         grid-template-columns: 1fr;
         height: 100vh;
-    }
-    
-    .info-side {
-        display: none;
-        padding: 48px 48px 48px 32px;
     }
 }
