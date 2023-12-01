@@ -11,14 +11,14 @@
             rel="stylesheet"
             type='text/css'
         >
-        <link rel="stylesheet" type="text/css" href="signup.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/login.css">
     </head>
     <body>
         <div class="form-wrapper">
             <div class="form-side">
                 <form class="my-form">
                     <div class="form-welcome-row">
-                        <h1 style="text-align: center;">Create your account</h1>
+                        <h1 style="text-align: center;">Login your account</h1>
                     </div>
                     <div class="socials-row">
                         <a href="#" title="Use Google">
@@ -27,18 +27,6 @@
                     </div>
                     <div class="divider">
                         <div class="divider-line"></div> Or <div class="divider-line"></div>
-                    </div>
-                    <div class="text-field">
-                        <label for="Full Name">Full Name:
-                            <input
-                                type="text"
-                                id="text"
-                                name="text"
-                                autocomplete="off"
-                                placeholder="Your Full Name"
-                                required
-                            >
-                        </label>
                     </div>
                     <div class="text-field">
                         <label for="email">Email:
@@ -69,6 +57,7 @@
                               <option><a href="#">Central Monitor</a></option>
                                 <option><a href="#">Regional Monitor</a></option>
                                 <option><a href="#">District Monitor</a></option>
+                                
                             </select>
                         </div>
                     </div>
@@ -95,19 +84,27 @@
                         </label>
                     </div>
                     <button type="submit" class="my-form__button">
-                        Sign up
+                        Login
                     </button>
-                    <p style="text-align: center;">Already have an account?</p>   
+                    <div class="my-form__actions">
+                        <a href="#" title="Create Account">
+                            Forgot password?
+                        </a>
+                        <a href="#" title="Reset Password" style="color: var(--primary)">
+                            Reset Password
+                        </a>
+                    </div>
+                    <p style="text-align: center;">Don't have an account?</p>   
 
                     <div class="my-form__signup">
-                        <a href="login.html" title="Login">
-                            Login
+                        <a href="signup.html" title="Sign Up">
+                            Sign Up
                         </a>
                     </div>
                 </form>
             </div>
         </div>
-        <script src="script.js"></script>
+        <script src="../assets/js/script.js"></script>
     </body>
 </html>
 

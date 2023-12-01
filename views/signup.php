@@ -11,14 +11,16 @@
             rel="stylesheet"
             type='text/css'
         >
-        <link rel="stylesheet" type="text/css" href="login.css">
+        <link rel="stylesheet" href="./../assets/css/general.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/signup.css">
     </head>
     <body>
         <div class="form-wrapper">
             <div class="form-side">
-                <form class="my-form">
+                <form class="my-form" onsubmit="signup(event)">
+                    <div class="success-field">Sign up successful</div>
                     <div class="form-welcome-row">
-                        <h1 style="text-align: center;">Login your account</h1>
+                        <h1 style="text-align: center;">Create your account</h1>
                     </div>
                     <div class="socials-row">
                         <a href="#" title="Use Google">
@@ -27,6 +29,19 @@
                     </div>
                     <div class="divider">
                         <div class="divider-line"></div> Or <div class="divider-line"></div>
+                    </div>
+                    <div class="text-field">
+                        <label for="Full Name">Full Name:
+                            <input
+                                type="text"
+                                id="text"
+                                name="fullname"
+                                autocomplete="off"
+                                placeholder="Your Full Name"
+                                required
+                            >
+                        </label>
+                        <div class="error-field" id="fullname-error-field"></div>
                     </div>
                     <div class="text-field">
                         <label for="email">Email:
@@ -47,17 +62,17 @@
                                 <path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28"></path>
                             </svg>
                         </label>
+                        <div class="error-field" id="email-error-field"></div>
                     </div>
                     <div class="text-field">
                         <label for="select">Select Monitor:
                             
                         </label>
                         <div class="form-field">
-                            <select name="select" id="#" placeholder="Select your monitor" required>
+                            <select name="position" id="#" placeholder="Select your monitor" required>
                               <option><a href="#">Central Monitor</a></option>
                                 <option><a href="#">Regional Monitor</a></option>
                                 <option><a href="#">District Monitor</a></option>
-                                
                             </select>
                         </div>
                     </div>
@@ -68,9 +83,9 @@
                                 type="password"
                                 name="password"
                                 placeholder="Your Password"
-                                title="Minimum 6 characters at 
-                                    least 1 Alphabet and 1 Number"
-                                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+                                title="Minimum 8 characters at 
+                                    least 1 Alphabet and 1 Number and 1 special character"
+                                pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[~\s!@#$%^&*_=+\-]).{8,}"
                                 required
                             >
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
@@ -82,29 +97,44 @@
                                 <path d="M8 11v-4a4 4 0 1 1 8 0v4"></path>
                             </svg>
                         </label>
+                        <div class="error-field" id="password-error-field"></div>
+                    </div>
+                    <div class="text-field">
+                        <label for="confirm-password">Confirm Password:
+                            <input
+                                id="confirm-password"
+                                type="password"
+                                name="confirm-password"
+                                placeholder="Confirm Password"
+                                title="Minimum 6 characters at 
+                                    least 1 Alphabet and 1 Number"
+                                required
+                            >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" 
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6z"></path>
+                                <path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path>
+                                <path d="M8 11v-4a4 4 0 1 1 8 0v4"></path>
+                            </svg>
+                        </label>
+                        <div class="error-field" id="confirm-password-error-field"></div>
                     </div>
                     <button type="submit" class="my-form__button">
-                        Login
+                        Sign up
                     </button>
-                    <div class="my-form__actions">
-                        <a href="#" title="Create Account">
-                            Forgot password?
-                        </a>
-                        <a href="#" title="Reset Password" style="color: var(--primary)">
-                            Reset Password
-                        </a>
-                    </div>
-                    <p style="text-align: center;">Don't have an account?</p>   
+                    <p style="text-align: center;">Already have an account?</p>   
 
                     <div class="my-form__signup">
-                        <a href="signup.html" title="Sign Up">
-                            Sign Up
+                        <a href="login.html" title="Login">
+                            Login
                         </a>
                     </div>
                 </form>
             </div>
         </div>
-        <script src="script.js"></script>
+        <script src="../assets/js/script.js"></script>
     </body>
 </html>
 
