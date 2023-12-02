@@ -3,6 +3,9 @@
 *{
   font-family: 'Roboto', sans-serif !important;
 }
+body{
+  margin: 0;
+}
 
 /*** General Form Styles ***/
 form .error-field,
