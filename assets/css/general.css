@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+  font-family: 'Roboto', sans-serif !important;
+}
+
 /*** General Form Styles ***/
 form .error-field,
 form .success-field {

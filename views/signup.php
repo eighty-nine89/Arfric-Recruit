@@ -6,11 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Mulishy&display=swap"
-            rel="stylesheet"
-            type='text/css'
-        >
         <link rel="stylesheet" href="./../assets/css/general.css">
         <link rel="stylesheet" type="text/css" href="../assets/css/signup.css">
     </head>
@@ -127,7 +122,7 @@
                     <p style="text-align: center;">Already have an account?</p>   
 
                     <div class="my-form__signup">
-                        <a href="login.html" title="Login">
+                        <a href="./login.php" title="Login">
                             Login
                         </a>
                     </div>

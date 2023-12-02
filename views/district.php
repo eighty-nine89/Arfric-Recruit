@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../assets/css/general.css">
     <title>District monitor</title>
 </head>
 <body>
-    <h3 style="text-align: center; margin-top:100%;">Hello there, welcome to District Monitor!</h3>
+    <h3 style="text-align: center; margin-top:25%;">Hello there, welcome to District Monitor!</h3>
 </body>
 </html>
