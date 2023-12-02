@@ -36,6 +36,7 @@ function signup(event) {
           });
         } else {
           displaySuccessMessage(".success-field");
+          window.location.href = "./central.php";
         }
       });
     })
