@@ -71,10 +71,9 @@ body {
 .form-wrapper {
     position: relative;
     display: grid;
-    grid-template-columns: 3fr 2fr;
-    max-width: 1200px;
+    grid-template-columns: 1fr;
+    max-width: 1800px;
     justify-content: center;
-    
 }
 
 .form-side {
@@ -85,9 +84,6 @@ body {
     background-color: white;
     place-items: center;
 }
-div.form-side{
-    
-}
 
 .welcome-message {
     max-width: 360px;
@@ -96,7 +92,7 @@ div.form-side{
 .my-form {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     position: relative;
     gap: 16px;
     max-width: 460px;
@@ -108,7 +104,6 @@ div.form-side{
         rgba(100, 100, 111, 0.2)
         0px 7px 29px 0px;
     top: -15%;
-    left: 60%;
 }
 
 .form-welcome {
