@@ -24,7 +24,7 @@
                     </div>
                     <div class="socials-row">
                         <a href="#" title="Use Google">
-                            <img src="assets/google.png" alt="Google">Use Google
+                            <img src="../assets/icons/google.png" alt="Google">Use Google
                         </a>
                     </div>
                     <div class="divider">
