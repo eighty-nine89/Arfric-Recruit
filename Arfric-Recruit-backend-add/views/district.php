@@ -46,7 +46,7 @@
     <h3>Hello there, welcome to District Monitor!</h3>
     </div><br><br><br>
     <div class="logout">
-    <button type="submit" id="btn" onclick="document.location='#'">Log out</button>
+    <button type="submit" id="btn" onclick="document.location='logout.php'">Log out</button>
     </div>
 </body>
 </html>

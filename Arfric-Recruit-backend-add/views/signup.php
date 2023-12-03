@@ -101,10 +101,7 @@
                                 type="password"
                                 name="confirm-password"
                                 placeholder="Confirm Password"
-                                title="Minimum 6 characters at 
-                                    least 1 Alphabet and 1 Number"
-                                required
-                            >
+                                title="Minimum 6 characters at least 1 Alphabet and 1 Number" required>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
                                 viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" 
                                 fill="none" stroke-linecap="round" stroke-linejoin="round">
